@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+<style type="text/css">
+    html,body{
+        background-color: aqua;
+    }
+</style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+  $("#btnhide").click(function(){
+    $("#mydiv").hide(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#btnshow").click(function(){
+    $("#mydiv").show(1000);
+  });
+  
+  $("#hide").click(function(){
+    $("#mydiv").hide(1000);
+  });
+});
+    </script>
+</head>
+<body>
+    <div id="mydiv" style="height:300px; width: 300px; background-color: rgb(141, 122, 122); border: 3px solid rgb(255, 3, 3);"> </div>
+    <button id="btnhide">HIDE DIV</button><hr>
+    <button id="btnshow">SHOW</button>
+    <button id="hide">HIDE</button><hr>
+    <button id="btnplus" style="font-size: xx-large;"><b>+</b></button>
+    <button id="btnmins" style="font-size: xx-large;"><b>-</b></button>
+
+</body>
+</html>
